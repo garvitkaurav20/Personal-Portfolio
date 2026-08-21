@@ -1,0 +1,48 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+*/node_modules/
+
+# Production build outputs
+dist/
+dist-ssr/
+build/
+client/dist/
+
+# SQLite databases & Local dev storage (optional - keep schema & seed in repo)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+server/db/*.db
+server/db/*.db-journal
+server/db/*.db-wal
+server/db/*.db-shm
+
+# Uploads directory (except placeholder)
+server/public/uploads/*
+!server/public/uploads/.gitkeep
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

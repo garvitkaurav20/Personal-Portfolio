@@ -1,0 +1,31 @@
+{
+  "name": "garvit-portfolio-fullstack",
+  "version": "1.0.0",
+  "description": "Full-Stack Responsive Personal Portfolio & Dynamic Admin Panel for Garvit Kaurav",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "build:client": "npm run build --prefix client",
+    "seed": "node server/db/seed.js",
+    "generate:report": "node scripts/generate_pdf_report.js"
+  },
+  "keywords": [
+    "portfolio",
+    "fullstack",
+    "express",
+    "react",
+    "sqlite",
+    "admin-dashboard",
+    "responsive"
+  ],
+  "author": "Garvit Kaurav",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
